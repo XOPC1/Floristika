@@ -1,19 +1,13 @@
 #pragma once
-#include <string>
 #include "Products.h"
+#include <iostream>
+#include <string>
 
 
-class Boquet : public Flowers {
-
-	void chooseFlowers() {
-
-	}
-
-	void choosePaper() {
-
-	}
-
-	void chooseAccessory() {
-
-	}
+class Boquet : public Products {
+public:
+	
+private:
+	std::string flowers;
+	int countFlowers;
 };

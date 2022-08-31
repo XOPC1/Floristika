@@ -1,66 +1,20 @@
 #pragma once
+#include <iostream>
 #include <string>
 
-
 class Products {
-	void setPrice() {
+public:
+	Products();
 
-	}
-
-	int getPrice() {
-
-	}
-
-	bool checkAvailability() {
-
-	}
+	void setName(std::string name);
+	std::string getName();
+	void setWeight(int weight);
+	int getWeight();
+	void setColor(std::string color);
+	std::string getColor();
 
 private:
-	int price;
-	bool availability;
-};
-
-class Flowers {
-	std::string getType() {
-
-	}
-
-	void setType() {
-
-	}
-
-	std::string getColor() {
-
-	}
-
-	void setColor() {
-
-	}
-private:
-	std::string type;
-	std::string color;
-	int size;
-};
-
-class Toys {
-	std::string getType() {
-
-	}
-
-	void setType() {
-
-	}
-
-	std::string getColor() {
-
-	}
-
-	void setColor() {
-
-	}
-
-private:
-	std::string type;
-	std::string color;
-	int size;
+	std::string _name;
+	int _weight = 0;
+	std::string _color;
 };
