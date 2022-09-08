@@ -1,15 +1,16 @@
-#include "Safety.h"
+#pragma once
 #include "Workers.h"
 #include <iostream>
 #include <string>
+#include <vector>
 
-SafetySystem::SafetySystem() {}
-void SafetySystem::setWorkerList() {
-
-}
-std::vector<Worker> SafetySystem::getWorkerList() {
-	return _workerList;
-}
-void SafetySystem::addWorker(Worker other) {
-	_workerList.push_back(other);
-}
+class SafetySystem {
+public:
+	SafetySystem();
+	void setWorkerList();
+	void getWorkerList();
+	void addWorker(Worker other);
+	static void workersCountUp();
+private:
+	std::vector<Worker> _workerList;
+};
